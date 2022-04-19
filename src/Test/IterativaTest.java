@@ -15,7 +15,6 @@ class IterativaTest {
         double resultado = iterativa.buscarMáximo(vector);
 
         assertEquals(resultado, resultadoEsperado, 0.0001, "El maximo no es correcto");
-
     }
 
     @Test
@@ -26,7 +25,6 @@ class IterativaTest {
         double resultado = iterativa.buscarMáximo(vector);
 
         assertEquals(resultado, resultadoEsperado, 0.0001, "El maximo no es correcto");
-
     }
 
     @Test
