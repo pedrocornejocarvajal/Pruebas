@@ -47,6 +47,15 @@ class IterativaTest {
 
     @Test
     void obtenerValorEntre() {
+
+        boolean exceptionProducida= false;
+        try {
+             new Iterativa(new double[]{20,9.5,8.1,10}).obtenerValorEntre(50,130);
+        } catch (Exception e) {
+            exceptionProducida = true;
+        }
+        assertTrue(exceptionProducida, "el metodo no se ha producido");
+
     }
 
     @Test

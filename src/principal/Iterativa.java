@@ -4,9 +4,9 @@ public class Iterativa {
     private final int MINIMO_VALIDO = -100;
     private final int MAXIMO_VALIDO = 1000;
 
-    private int[] datos;
+    private double[] datos;
 
-    public Iterativa(int[] datos) {
+    public Iterativa(double[] datos) {
         this.datos = datos;
     }
 
