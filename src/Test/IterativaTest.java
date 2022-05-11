@@ -75,6 +75,8 @@ class IterativaTest {
 
     }
 
+
+    
     @Test
     void verificarDatosInternos2CN() {
 
@@ -87,4 +89,18 @@ class IterativaTest {
         assertTrue(exceptionProducida, "el método no ha producido excepciones");
 
     }
+
+    @Test
+    void verificarDatosInternos3CN() {
+
+        boolean exceptionProducida= false;
+        try {
+            new Iterativa(new double[]{}).verificarDatosInternos();
+        } catch (Exception e) {
+            exceptionProducida = true;
+        }
+        assertFalse(exceptionProducida, "el método no ha producido excepciones");
+
+    }
+
 }

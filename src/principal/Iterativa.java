@@ -70,8 +70,7 @@ public class Iterativa {
     public void verificarDatosInternos() throws Exception {
         int i = 0;
         while (i < datos.length) {
-            if (datos[i] < MINIMO_VALIDO
-                    || datos[i] > MAXIMO_VALIDO) {
+            if (datos[i] < MINIMO_VALIDO || datos[i] > MAXIMO_VALIDO) {
                 throw new Exception("Dato fuera del rango permitido.");
             }
             i++;
